@@ -1,0 +1,35 @@
+@import "../../Palette/palette.scss";
+
+.Books {
+  width: 100vw;
+  height: max-content;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  &__Card {
+    width: 500px;
+    color: white;
+    text-align: center;
+    margin: 10px;
+    text-decoration: none;
+    background-color: $background-color-hover;
+    border-radius: 12px;
+    &__Link {
+      text-decoration: none;
+      color: white;
+      &:hover {
+        color: white;
+        background-color: rosybrown;
+        border-radius: 12px;
+        padding: 4px;
+      }
+    }
+    &__Title {
+      font-size: 30px;
+    }
+    &__Img {
+      border: $image-border;
+    }
+  }
+}
